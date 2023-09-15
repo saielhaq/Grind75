@@ -1,9 +1,9 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        anca = {}
+        a = {}
         for i, num in (enumerate(nums)):
-            saad = target - num
-            if saad in anca:
-                return [anca[saad], i]
+            d = target - num
+            if d in a:
+                return [a[d], i]
             else:
-                anca[num] = i
+                a[num] = i
